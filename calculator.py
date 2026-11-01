@@ -6,7 +6,7 @@ while True:
     if zahl1 == "q":
         break
 
-    rechenart = input("Rechenart (+, -, *, /): ")
+    rechenart = input("Rechenart (+, -, *, / oder plus, minus, mal, geteilt): ").lower()
     if rechenart == "q":
         break
 
@@ -17,13 +17,13 @@ while True:
     a = float(zahl1)
     b = float(zahl2)
 
-    if rechenart == "+":
+    if rechenart == "+" or rechenart == "plus":
         print("Ergebnis:", a + b)
-    elif rechenart == "-":
+    elif rechenart == "-" or rechenart == "minus":
         print("Ergebnis:", a - b)
-    elif rechenart == "*":
+    elif rechenart == "*" or rechenart == "mal":
         print("Ergebnis:", a * b)
-    elif rechenart == "/":
+    elif rechenart == "/" or rechenart == "geteilt":
         if b == 0:
             print("Durch 0 geht nicht")
         else:
