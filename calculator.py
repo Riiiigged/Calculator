@@ -1,42 +1,37 @@
-# Einfacher Taschenrechner
+# mein erster taschenrechner
 
-print("Einfacher Taschenrechner")
-print("Rechenarten: +  -  *  /")
-print("Gib 'q' ein, um zu beenden")
+print("Taschenrechner")
+print("q = beenden")
 
 while True:
-    # Nach der ersten Zahl fragen
-    first = input("\nErste Zahl eingeben: ")
-    if first == "q":
+    zahl1 = input("\nErste Zahl: ")
+    if zahl1 == "q":
         break
 
-    # Nach der Rechenart fragen
-    op = input("Rechenart eingeben (+, -, *, /): ")
-    if op == "q":
+    rechenart = input("Rechenart (+, -, *, /): ")
+    if rechenart == "q":
         break
 
-    # Nach der zweiten Zahl fragen
-    second = input("Zweite Zahl eingeben: ")
-    if second == "q":
+    zahl2 = input("Zweite Zahl: ")
+    if zahl2 == "q":
         break
 
-    # Den Text in Zahlen umwandeln
-    a = float(first)
-    b = float(second)
+    # text in zahlen umwandeln
+    a = float(zahl1)
+    b = float(zahl2)
 
-    # Rechnen
-    if op == "+":
+    if rechenart == "+":
         print("Ergebnis:", a + b)
-    elif op == "-":
+    elif rechenart == "-":
         print("Ergebnis:", a - b)
-    elif op == "*":
+    elif rechenart == "*":
         print("Ergebnis:", a * b)
-    elif op == "/":
+    elif rechenart == "/":
         if b == 0:
-            print("Man kann nicht durch null teilen!")
+            print("Durch 0 geht nicht")
         else:
             print("Ergebnis:", a / b)
     else:
-        print("Das ist keine gültige Rechenart.")
+        print("Die Rechenart gibt es nicht")
 
-print("Auf Wiedersehen!")
+print("Tschüss")
