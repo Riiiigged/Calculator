@@ -1,4 +1,4 @@
-# mein erster taschenrechner
+# Taschenrechner
 
 print("Taschenrechner")
 print("q = beenden")
@@ -16,7 +16,7 @@ while True:
     if zahl2 == "q":
         break
 
-    # text in zahlen umwandeln
+    # text in Zahlen umwandeln
     a = float(zahl1)
     b = float(zahl2)
 
