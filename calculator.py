@@ -1,42 +1,42 @@
-# Simple Calculator
+# Einfacher Taschenrechner
 
-print("Simple Calculator")
-print("Operations: +  -  *  /")
-print("Type 'q' to quit")
+print("Einfacher Taschenrechner")
+print("Rechenarten: +  -  *  /")
+print("Gib 'q' ein, um zu beenden")
 
 while True:
-    # Ask for the first number
-    first = input("\nEnter first number: ")
+    # Nach der ersten Zahl fragen
+    first = input("\nErste Zahl eingeben: ")
     if first == "q":
         break
 
-    # Ask for the operation
-    op = input("Enter operation (+, -, *, /): ")
+    # Nach der Rechenart fragen
+    op = input("Rechenart eingeben (+, -, *, /): ")
     if op == "q":
         break
 
-    # Ask for the second number
-    second = input("Enter second number: ")
+    # Nach der zweiten Zahl fragen
+    second = input("Zweite Zahl eingeben: ")
     if second == "q":
         break
 
-    # Turn the text into numbers
+    # Den Text in Zahlen umwandeln
     a = float(first)
     b = float(second)
 
-    # Do the math
+    # Rechnen
     if op == "+":
-        print("Answer:", a + b)
+        print("Ergebnis:", a + b)
     elif op == "-":
-        print("Answer:", a - b)
+        print("Ergebnis:", a - b)
     elif op == "*":
-        print("Answer:", a * b)
+        print("Ergebnis:", a * b)
     elif op == "/":
         if b == 0:
-            print("Can't divide by zero!")
+            print("Man kann nicht durch null teilen!")
         else:
-            print("Answer:", a / b)
+            print("Ergebnis:", a / b)
     else:
-        print("That's not a valid operation.")
+        print("Das ist keine gültige Rechenart.")
 
-print("Goodbye!")
+print("Auf Wiedersehen!")
